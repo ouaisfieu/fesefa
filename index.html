@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARG Psyche Landing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="banner" class="banner">
+    <div class="brand">
+      <h1 class="logo">ARG<span class="dot">•</span>Engine</h1>
+      <p class="tag">veille citoyenne ludique — remix psyché</p>
+    </div>
+
+    <div class="controls">
+      <label class="switch">
+        <input id="theme-toggle" type="checkbox" aria-label="Activer thème psyché">
+        <span class="slider"></span>
+      </label>
+      <button id="konami-hint" class="btn ghost">Astuce</button>
+    </div>
+  </div>
+
+  <main class="hero" role="main">
+    <section class="hero-left">
+      <h2 class="headline">Agis local. Rêve global.</h2>
+      <p class="lead">Prototype open source pour la veille citoyenne, maintenant en mode psyché — participe, modère, partage.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#try">Essayer maintenant</a>
+        <a class="btn ghost" href="#workshop">Atelier</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="num" data-count="128">128</div>
+          <div class="label">Missions</div>
+        </div>
+        <div class="stat">
+          <div class="num" data-count="3.2k">3.2k</div>
+          <div class="label">Contribs</div>
+        </div>
+        <div class="stat">
+          <div class="num" data-count="72">72</div>
+          <div class="label">Communes</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-right">
+      <div class="device">
+        <div class="screen" id="screen-preview" aria-hidden="true">
+          <div class="glow"></div>
+          <div class="mockup">
+            <div class="mock-header">
+              <span class="mh-dot"></span><span class="mh-dot"></span><span class="mh-dot"></span>
+            </div>
+            <div class="mock-body">
+              <h3>Mission: Nettoyage du parc</h3>
+              <p class="small">Étapes: collecte → vérif → action</p>
+              <div class="progress"><span style="width:62%"></span></div>
+              <div class="badges"><span class="badge">Vérifié</span><span class="badge">Local</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="neon-frame"></div>
+      </div>
+    </section>
+  </main>
+
+  <section id="try" class="panel">
+    <h3>Tester en direct</h3>
+    <p>Ouvrez la démo, créez une mission, joignez une preuve et envoyez en modération. Le thème psyché est purement visuel.</p>
+    <div class="mini-controls">
+      <button id="spawn-penguin" class="btn">Faire apparaître un pingouin</button>
+      <button id="glitch-toggle" class="btn ghost">Activer glitch</button>
+    </div>
+  </section>
+
+  <section id="workshop" class="panel">
+    <h3>Atelier</h3>
+    <p>Fiches, slides et guide d’animation inclus dans le repo. Organisez un atelier de 90 minutes pour essaimer localement.</p>
+  </section>
+
+  <div id="penguin-layer" aria-hidden="true"></div>
+
+  <footer class="footer">
+    <div class="foot-left">© Projet communautaire — respect de l’attention</div>
+    <div class="foot-right"><a href="#ENGAGEMENT.md">Engagement</a> · <a href="#PRIVACY.md">Confidentialité</a></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
